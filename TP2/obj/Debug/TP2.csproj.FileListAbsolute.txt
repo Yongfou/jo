@@ -1,0 +1,22 @@
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\bin\Debug\TP2.exe.config
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.frmTP2.resources
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.Properties.Resources.resources
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\bin\Debug\TP2.exe
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\bin\Debug\TP2.pdb
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\bin\Debug\mnemoTIC.Programmation.dll
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\bin\Debug\mnemoTIC.Programmation.xml
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.exe
+D:\CSH\Cours Automne\420-CAC-HY Algorithme et programmation orientée objet\Étudiants\TP2\A (Roche, papier ou ciseau)\TP2\TP2\obj\Debug\TP2.pdb
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\bin\Debug\TP2.exe.config
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.exe
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.pdb
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\bin\Debug\TP2.exe
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\bin\Debug\TP2.pdb
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\bin\Debug\mnemoTIC.Programmation.dll
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\bin\Debug\mnemoTIC.Programmation.xml
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.frmTP2.resources
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.Properties.Resources.resources
+C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
