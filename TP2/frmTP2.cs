@@ -22,6 +22,7 @@ namespace TP2
         const byte byPapier = 2;
         const byte byCiseaux = 3;
         const byte byAllumette = 4;
+            string sNom = "";
 
         // Déclaration des variables globales (champs).
         Random _rnd = new Random();
@@ -34,6 +35,7 @@ namespace TP2
         public frmTP2()
         {
             InitializeComponent();
+            string sNom = "";
         }
 
         // Ajouter les commentaires (Auteur, Description, Date)
@@ -42,13 +44,12 @@ namespace TP2
             //Définir les variables locale
 
             byte byCoupOrdi = 0;
-            string sNom = "";
 
             //Collecte d'information
 
             //ICI ICI demander nom juste au premier tour
 
-            // sNom = Formulaires.DemanderValeur("Quel est votre nom ?", "Nom joueur");
+            if(sNom == "") sNom = Formulaires.DemanderValeur("Quel est votre nom ?", "Nom joueur");
 
 
 
