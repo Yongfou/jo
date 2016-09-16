@@ -20,3 +20,14 @@ C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2
 C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.frmTP2.resources
 C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.Properties.Resources.resources
 C:\Users\s-paq\Desktop\Informatique de Gestion\Session1\Algo\420_cac\Travaux\TP2\TP2\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
+C:\xampp\htdocs\jo\TP2\bin\Debug\TP2.exe.config
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.exe
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.pdb
+C:\xampp\htdocs\jo\TP2\bin\Debug\TP2.exe
+C:\xampp\htdocs\jo\TP2\bin\Debug\TP2.pdb
+C:\xampp\htdocs\jo\TP2\bin\Debug\mnemoTIC.Programmation.dll
+C:\xampp\htdocs\jo\TP2\bin\Debug\mnemoTIC.Programmation.xml
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.frmTP2.resources
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.Properties.Resources.resources
+C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
