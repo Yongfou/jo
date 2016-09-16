@@ -31,3 +31,14 @@ C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
 C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.frmTP2.resources
 C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.Properties.Resources.resources
 C:\xampp\htdocs\jo\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
+C:\Users\s-paq\Documents\jo\TP2\bin\Debug\TP2.exe.config
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.exe
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.pdb
+C:\Users\s-paq\Documents\jo\TP2\bin\Debug\TP2.exe
+C:\Users\s-paq\Documents\jo\TP2\bin\Debug\TP2.pdb
+C:\Users\s-paq\Documents\jo\TP2\bin\Debug\mnemoTIC.Programmation.dll
+C:\Users\s-paq\Documents\jo\TP2\bin\Debug\mnemoTIC.Programmation.xml
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.frmTP2.resources
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.Properties.Resources.resources
+C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
