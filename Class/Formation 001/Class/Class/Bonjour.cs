@@ -13,5 +13,9 @@ namespace Class
         {
             MessageBox.Show("New Object!");
         }
+        public Bonjour(string msg)
+        {
+            MessageBox.Show(msg);
+        }
     }
 }
