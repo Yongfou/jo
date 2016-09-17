@@ -61,9 +61,6 @@ namespace TP2
         // Ajouter les commentaires (Auteur, Description, Date)
         private void btnJouer_Click(object sender, EventArgs e)
         {
-            //Définir les variables locale
-
-            byCoupOrdi = 0;
 
             //Collecte d'information
 
@@ -78,9 +75,6 @@ namespace TP2
                 {
                     // Start timer
                     timer1.Enabled = true;
-
-                    // Reset Timer
-                    nombreOfChanges = 0;
 
                     // Possibilité
 
@@ -214,9 +208,13 @@ namespace TP2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Définir les variables locale
+            nombreOfChanges = 0;
+
             // Loop until animation finish
-            while(nombreOfChanges <= 10)
+            while (nombreOfChanges <= 10)
             {
+
                 //Random
 
                 byCoupOrdi = (byte)_rnd.Next(valeur_min, valeur_max);
