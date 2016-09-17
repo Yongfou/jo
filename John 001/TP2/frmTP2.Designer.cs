@@ -48,7 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnJouer = new System.Windows.Forms.Button();
             this.btnRecommencer = new System.Windows.Forms.Button();
-            this.chkAnimé = new System.Windows.Forms.CheckBox();
+            this.chkAnime = new System.Windows.Forms.CheckBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpJoueur1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgActionJoueur)).BeginInit();
@@ -273,22 +273,22 @@
             this.btnRecommencer.UseVisualStyleBackColor = true;
             this.btnRecommencer.Click += new System.EventHandler(this.btnRecommencer_Click);
             // 
-            // chkAnimé
+            // chkAnime
             // 
-            this.chkAnimé.AutoSize = true;
-            this.chkAnimé.BackColor = System.Drawing.Color.Transparent;
-            this.chkAnimé.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAnimé.ForeColor = System.Drawing.Color.White;
-            this.chkAnimé.Location = new System.Drawing.Point(20, 320);
-            this.chkAnimé.Name = "chkAnimé";
-            this.chkAnimé.Size = new System.Drawing.Size(70, 20);
-            this.chkAnimé.TabIndex = 8;
-            this.chkAnimé.Text = "Animé";
-            this.chkAnimé.UseVisualStyleBackColor = false;
+            this.chkAnime.AutoSize = true;
+            this.chkAnime.BackColor = System.Drawing.Color.Transparent;
+            this.chkAnime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAnime.ForeColor = System.Drawing.Color.White;
+            this.chkAnime.Location = new System.Drawing.Point(20, 320);
+            this.chkAnime.Name = "chkAnime";
+            this.chkAnime.Size = new System.Drawing.Size(70, 20);
+            this.chkAnime.TabIndex = 8;
+            this.chkAnime.Text = "Animé";
+            this.chkAnime.UseVisualStyleBackColor = false;
             // 
             // timer1
             // 
-            this.timer1.Interval = 10;
+            this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmTP2
@@ -298,7 +298,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(475, 398);
-            this.Controls.Add(this.chkAnimé);
+            this.Controls.Add(this.chkAnime);
             this.Controls.Add(this.btnRecommencer);
             this.Controls.Add(this.btnJouer);
             this.Controls.Add(this.lblPartiesNulles);
@@ -340,7 +340,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnJouer;
         private System.Windows.Forms.Button btnRecommencer;
-        private System.Windows.Forms.CheckBox chkAnimé;
+        private System.Windows.Forms.CheckBox chkAnime;
         private System.Windows.Forms.RadioButton optAllumette;
         private System.Windows.Forms.RadioButton optCiseau;
         private System.Windows.Forms.RadioButton optPapier;
