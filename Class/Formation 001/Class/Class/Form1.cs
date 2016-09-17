@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Class_001
+namespace Class
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+            new Bonjour();
         }
     }
 }

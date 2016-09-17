@@ -1,4 +1,4 @@
-﻿namespace Class_001
+﻿namespace Class
 {
     partial class Form1
     {
