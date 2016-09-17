@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Class_001.Properties
+namespace Class.Properties
 {
 
 
