@@ -143,8 +143,17 @@ namespace TP2
 
                 if (_Ntour != 0)
                 {
-                    //Définir les variables locale
-                    nombreOfChanges = 0;
+
+                    // Check if checkbox is checked
+                    if(chkAnime.Checked == true)
+                    {
+                        // Activer l'animation
+                        nombreOfChanges = 50;
+                    } else
+                    {
+                        // Activer l'animation
+                        nombreOfChanges = 1;
+                    }
 
                     // Start timer
                     timer1.Enabled = true;
@@ -216,14 +225,12 @@ namespace TP2
         private void timer1_Tick(object sender, EventArgs e)
         {
             // Loop until animation finish
-            if (nombreOfChanges <= 100)
+            if (nombreOfChanges > 0)
             {
-
                 //Random
-
                 byCoupOrdi = (byte)_rnd.Next(valeur_min, valeur_max);
                 afficherImage(byCoupOrdi);
-                nombreOfChanges++;
+                nombreOfChanges--;
             } else
             {
                 // Ajuste les points
