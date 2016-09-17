@@ -15,7 +15,7 @@ namespace Class
         public Form1()
         {
             InitializeComponent();
-            new Bonjour("allo");
+            new Bonjour("allo", "Jonathan");
         }
     }
 }
