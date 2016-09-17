@@ -58,6 +58,76 @@ namespace TP2
                 imgActionOrdinateur.Image = global::TP2.Properties.Resources.allumette;
         }
 
+        private void checkQuiGagne()
+        {
+            // Possibilité
+
+            //Roche
+
+            if (_Chplayer == byRoche)
+            {
+                if (byCoupOrdi == byPapier)
+                    _VicOrdi++;
+
+                else if (byCoupOrdi == byRoche)
+                    _Nul++;
+
+                else
+                    _VicPlayer++;
+            }
+
+            //Papier
+
+            if (_Chplayer == byPapier)
+
+            {
+                if (byCoupOrdi == byRoche)
+                    _VicPlayer++;
+
+                else if (byCoupOrdi == byPapier)
+                    _Nul++;
+
+                else
+                    _VicOrdi++;
+            }
+
+            // Ciseaux
+
+            if (_Chplayer == byCiseaux)
+            {
+                if (byCoupOrdi == byRoche)
+                    _VicOrdi++;
+
+                else if (byCoupOrdi == byCiseaux)
+                    _Nul++;
+
+                else
+                    _VicPlayer++;
+            }
+
+            // Allumette
+
+            if (_Chplayer == byAllumette)
+            {
+                if (byCoupOrdi == byPapier)
+                    _VicPlayer++;
+
+                else if (byCoupOrdi == byAllumette)
+                    _Nul++;
+
+                else
+                    _VicOrdi++;
+            }
+
+
+            // Affiche label
+
+            lblVictoiresOrdinateur.Text = (_VicOrdi.ToString());
+            lblVictoiresJoueur.Text = (_VicPlayer.ToString());
+            lblNbConfrontations.Text = (_Ntour.ToString());
+            lblPartiesNulles.Text = (_Nul.ToString());
+        }
+
         // Ajouter les commentaires (Auteur, Description, Date)
         private void btnJouer_Click(object sender, EventArgs e)
         {
@@ -73,70 +143,13 @@ namespace TP2
 
                 if (_Ntour != 0)
                 {
+                    //Définir les variables locale
+                    nombreOfChanges = 0;
+
                     // Start timer
                     timer1.Enabled = true;
 
-                    // Possibilité
-
-                    //Roche
-
-                    if (_Chplayer == byRoche)
-                    {
-                        if (byCoupOrdi == byPapier)
-                            _VicOrdi += 1;
-
-                        else if (byCoupOrdi == byRoche)
-                            _Nul += 1;
-
-                        else
-                            _VicPlayer += 1;
-                    }
-
-                    //Papier
-
-                    if (_Chplayer == byPapier)
-
-                    {
-                        if (byCoupOrdi == byRoche)
-                            _VicPlayer += 1;
-
-                        else if (byCoupOrdi == byPapier)
-                            _Nul += 1;
-
-                        else
-                            _VicOrdi += 1;
-                    }
-
-                    // Ciseaux
-
-                    if (_Chplayer == byCiseaux)
-                    {
-                        if (byCoupOrdi == byRoche)
-                            _VicOrdi += 1;
-
-                        else if (byCoupOrdi == byCiseaux)
-                            _Nul += 1;
-
-                        else
-                            _VicPlayer += 1;
-                    }
-
-                    // Allumette
-
-                    if (_Chplayer == byAllumette)
-                    {
-                        if (byCoupOrdi == byPapier)
-                            _VicPlayer += 1;
-
-                        else if (byCoupOrdi == byAllumette)
-                            _Nul += 1;
-
-                        else
-                            _VicOrdi += 1;
-                    }
-
                     // Diminuer les tour
-
                     _Ntour -= 1;
                 }
                 else if (_Ntour == 0)
@@ -148,12 +161,6 @@ namespace TP2
                     else
                         MessageBox.Show(" Le gagant est l'ordinateur avec " + _VicOrdi + " victoires!");
                 }
-                // Affiche label
-
-                lblVictoiresOrdinateur.Text = (_VicOrdi.ToString());
-                lblVictoiresJoueur.Text = (_VicPlayer.ToString());
-                lblNbConfrontations.Text = (_Ntour.ToString());
-                lblPartiesNulles.Text = (_Nul.ToString());
 
 
             }
@@ -208,11 +215,8 @@ namespace TP2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //Définir les variables locale
-            nombreOfChanges = 0;
-
             // Loop until animation finish
-            while (nombreOfChanges <= 10)
+            if (nombreOfChanges <= 100)
             {
 
                 //Random
@@ -220,9 +224,14 @@ namespace TP2
                 byCoupOrdi = (byte)_rnd.Next(valeur_min, valeur_max);
                 afficherImage(byCoupOrdi);
                 nombreOfChanges++;
+            } else
+            {
+                // Ajuste les points
+                checkQuiGagne();
+
+                // Stop timer
+                timer1.Enabled = false;
             }
-            // Stop timer
-            timer1.Enabled = false;
         }
     }
     // Comment faire pour remettre le selecteur dans roche quand je clic sur recommencer et associer l'image ordi au random
