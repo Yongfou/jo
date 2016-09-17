@@ -17,5 +17,9 @@ namespace Class
         {
             MessageBox.Show(msg);
         }
+        public Bonjour(string msg, string fname)
+        {
+            MessageBox.Show(msg + " " + fname);
+        }
     }
 }
