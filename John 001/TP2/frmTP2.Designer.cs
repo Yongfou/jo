@@ -114,13 +114,11 @@
             // optRoche
             // 
             this.optRoche.AutoSize = true;
-            this.optRoche.Checked = true;
             this.optRoche.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optRoche.Location = new System.Drawing.Point(16, 205);
             this.optRoche.Name = "optRoche";
             this.optRoche.Size = new System.Drawing.Size(71, 20);
             this.optRoche.TabIndex = 3;
-            this.optRoche.TabStop = true;
             this.optRoche.Text = "Roche";
             this.optRoche.UseVisualStyleBackColor = true;
             this.optRoche.CheckedChanged += new System.EventHandler(this.optRoche_CheckedChanged);
@@ -288,7 +286,6 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmTP2

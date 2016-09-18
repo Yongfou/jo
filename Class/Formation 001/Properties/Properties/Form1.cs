@@ -15,6 +15,10 @@ namespace Properties
         public Form1()
         {
             InitializeComponent();
+            Person pers = new Person("Sébastien" , "Paquet",22);
+
+            MessageBox.Show(pers.Age.ToString(),"test");
+            new Random();
         }
     }
 }

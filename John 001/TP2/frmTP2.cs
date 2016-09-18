@@ -41,7 +41,7 @@ namespace TP2
         }
 
         // Function pour afficher l'image
-        private void afficherImage(byte byCoupOrdi)
+        public void afficherImage(byte byCoupOrdi)
         {
             // Affiche image Ordi
 
@@ -148,7 +148,7 @@ namespace TP2
                     if(chkAnime.Checked == true)
                     {
                         // Activer l'animation
-                        nombreOfChanges = 50;
+                        nombreOfChanges = 100;
                     } else
                     {
                         // Activer l'animation
