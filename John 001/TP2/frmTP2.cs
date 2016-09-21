@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using mnemoTIC.Programmation;
+using System.Threading;
 
 namespace TP2
 {
@@ -128,8 +129,14 @@ namespace TP2
             lblPartiesNulles.Text = (_Nul.ToString());
         }
 
+        public async Task Button1ClickAsync()
+        {
+            // Do asynchronous work.
+            await Task.Sleep(50);
+        }
+
         // Ajouter les commentaires (Auteur, Description, Date)
-        private void btnJouer_Click(object sender, EventArgs e)
+        private async void btnJouer_Click(object sender, EventArgs e)
         {
 
             //Collecte d'information
@@ -143,20 +150,29 @@ namespace TP2
 
                 if (_Ntour != 0)
                 {
-
                     // Check if checkbox is checked
                     if(chkAnime.Checked == true)
                     {
                         // Activer l'animation
-                        nombreOfChanges = 50;
+                        nombreOfChanges = 10;
                     } else
                     {
                         // Activer l'animation
                         nombreOfChanges = 1;
                     }
-
-                    // Start timer
-                    timer1.Enabled = true;
+                    
+                    // Loop until animation finish
+                    while (nombreOfChanges > 0)
+                    {
+                        //Random
+                        byCoupOrdi = (byte)_rnd.Next(valeur_min, valeur_max);
+                        afficherImage(byCoupOrdi);
+                        nombreOfChanges--;
+                        await Button1ClickAsync();
+                    }
+                    
+                    // Ajuste les points
+                    checkQuiGagne();
 
                     // Diminuer les tour
                     _Ntour -= 1;
@@ -220,25 +236,6 @@ namespace TP2
         {
             imgActionJoueur.Image = global::TP2.Properties.Resources.allumette;
             _Chplayer = byAllumette;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            // Loop until animation finish
-            if (nombreOfChanges > 0)
-            {
-                //Random
-                byCoupOrdi = (byte)_rnd.Next(valeur_min, valeur_max);
-                afficherImage(byCoupOrdi);
-                nombreOfChanges--;
-            } else
-            {
-                // Ajuste les points
-                checkQuiGagne();
-
-                // Stop timer
-                timer1.Enabled = false;
-            }
         }
     }
     // Comment faire pour remettre le selecteur dans roche quand je clic sur recommencer et associer l'image ordi au random

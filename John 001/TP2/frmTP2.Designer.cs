@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTP2));
             this.grpJoueur1 = new System.Windows.Forms.GroupBox();
             this.optAllumette = new System.Windows.Forms.RadioButton();
@@ -49,7 +48,6 @@
             this.btnJouer = new System.Windows.Forms.Button();
             this.btnRecommencer = new System.Windows.Forms.Button();
             this.chkAnime = new System.Windows.Forms.CheckBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpJoueur1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgActionJoueur)).BeginInit();
             this.grpJoueur2.SuspendLayout();
@@ -286,11 +284,6 @@
             this.chkAnime.Text = "Animé";
             this.chkAnime.UseVisualStyleBackColor = false;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // frmTP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,7 +338,6 @@
         private System.Windows.Forms.RadioButton optCiseau;
         private System.Windows.Forms.RadioButton optPapier;
         private System.Windows.Forms.RadioButton optRoche;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 
