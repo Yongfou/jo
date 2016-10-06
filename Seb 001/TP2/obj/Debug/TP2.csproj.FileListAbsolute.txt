@@ -42,3 +42,6 @@ C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cac
 C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.frmTP2.resources
 C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.Properties.Resources.resources
 C:\Users\s-paq\Documents\jo\TP2\obj\Debug\TP2.csproj.GenerateResource.Cache
+C:\Users\s-paq\Documents\jo\Seb 001\TP2\bin\Debug\TP2.exe.config
+C:\Users\s-paq\Documents\jo\Seb 001\TP2\obj\Debug\TP2.exe
+C:\Users\s-paq\Documents\jo\Seb 001\TP2\obj\Debug\TP2.pdb

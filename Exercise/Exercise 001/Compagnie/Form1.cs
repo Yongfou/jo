@@ -16,11 +16,13 @@ namespace Compagnie
         {
             InitializeComponent();
             List<Product> products = new List<Product>();
-            Product prod1 = new Product(6121703, "Patato", 1.50, "brown");
-
-            products.Add(prod1);
-           prod1.ViewProduct();
-           // MessageBox.Show(prod1.Idproduct.ToString() + "" + prod1.Name + "\n" + prod1.Price.ToString() + "" + prod1.Color);
         }
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            Addproduct addproduct = new Addproduct();
+            addproduct.Show();
+            this.Hide();
+        }
+
     }
 }
