@@ -16,7 +16,7 @@ namespace Properties
         {
             InitializeComponent();
             Person pers = new Person("Jonathan", "Gagne", 22);
-            MessageBox.Show(pers.Age.ToString());
+            MessageBox.Show(pers.Age.ToString() + pers.Fname + pers.Fname);
             new Random();
         }
     }

@@ -13,26 +13,26 @@ namespace Compagnie
         public double Price { get; set; }
         public string Name { get; set; }
         public string Color { get; set; }
-        public List<string> Listcolor { get; set; } = new List<string>();
-        public List<string> ListName { get; set; } = new List<string>();
-        public Product(int idproduct, string name, double price, string color)
+        //public List<string> Listcolor { get; set; } = new List<string>();
+       // public List<string> ListProducts { get; set; } = new List<string>();      
+        public Product(int idproduct, string name, double price, string color)        
         {
             Idproduct = idproduct;
             Name = name;
             Price = price;
             Color = color;
-            Listcolor.Add("Blue");
-            Listcolor.Add ("Black");
-            Listcolor.Add("White");
+           // Listcolor.Add("Blue");
+           // Listcolor.Add ("Black");
+          //  Listcolor.Add("White");
         }
         public void AddColor (string color)
         {
-            Listcolor.Add(color);
+           // Listcolor.Add(color);
         }
-        public void ListAllProducts() //(string name)
+        public void AddProduct() //(string name)
         {
+           // ListProducts.Add(Name);
             
-            //MessageBox.Show(listName);
         }
         public void ViewProduct()
         {
