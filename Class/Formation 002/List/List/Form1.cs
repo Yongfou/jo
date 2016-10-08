@@ -24,8 +24,8 @@ namespace List
 
             foreach (string value in mylist)
             {
-                MessageBox.Show(mylist[i]);
-                i++;
+                MessageBox.Show(mylist[i++]);
+               // i++;
             }
         }
     }
