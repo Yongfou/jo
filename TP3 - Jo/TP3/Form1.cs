@@ -12,10 +12,10 @@ namespace TP3
 {
     public partial class Form1 : Form
     {
-        public static DataGridView DataGridView1 { get; set; }
-        public Form1()
+        public Form1(List<Mot> lm)
         {
             InitializeComponent();
+            dataGridView.DataSource = lm;
         }
     }
 }
