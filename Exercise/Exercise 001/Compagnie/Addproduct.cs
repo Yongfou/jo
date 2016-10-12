@@ -12,44 +12,33 @@ namespace Compagnie
 {
     public partial class Addproduct : Form
     {
-        int i = 0;
+        public static TextBox TxtNom { get; set; }
+        public static TextBox TxtIdproduct { get; set; }
+        public static TextBox TxtPrice { get; set; }
+        public static ComboBox CmbColor { get; set; }
+        public static DataGridView MyGrid { get; set; }
+        public static TextBox TxtN { get; set; }
+
         public Addproduct()
         {
             InitializeComponent();
-         
-
+            TxtNom = txtNom;
+            TxtIdproduct = txtidproduct;
+            TxtPrice = txtprice;
+            CmbColor = cmbcolor;
+            MyGrid = myGrid;
+            TxtN = txtn;
         }
-        List<Product> products = new List<Product>();
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            string sNom = txtNom.Text.ToString(); ;
-            int idproduit = Convert.ToInt32(txtidproduct.Text.ToString()); ;
-            double price = Convert.ToDouble(txtidproduct.Text.ToString()) ;
-            string color = Convert.ToString( cmbcolor.SelectedItem.ToString());
-          
-            // sNom = txtNom.Text.ToString();
-            //idproduit = Convert.ToInt32 (txtidproduct.Text.ToString());
-           // price = Convert.ToDouble(txtprice.Text.ToString());
-           // color = cmbcolor.SelectedText.ToString();
-            Product produit001 = new Product(idproduit, sNom, price, color);
-            products.Add(produit001);
-            
-            sNom = "";
-            idproduit = 0;
-            price = 0.00f;
-            color = "";
-            sNom = "";
-            txtNom.Text = String.Empty;
-            txtidproduct.Text = String.Empty;
-            txtprice.Text = String.Empty;
-            cmbcolor.Refresh();
-            
+            new Product();
+
         }
 
-        private void btnSeeProduct_Click(object sender, EventArgs e)
+        private void btnclose_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(products[0].ToString());
+            this.Hide();
         }
     }
 }
