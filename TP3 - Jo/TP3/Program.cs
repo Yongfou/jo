@@ -17,7 +17,6 @@ namespace TP3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AnalyseurTexte());
-            Application.Run(new Form1());
         }
     }
 }

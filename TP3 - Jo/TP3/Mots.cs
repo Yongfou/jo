@@ -8,61 +8,61 @@ using System.Windows.Forms;
 
 namespace TP3
 {
+    public class Mot
+    {
+        public string Value { get; set; }
+        public int NChar { get; set; }
+
+        public Mot(string value)
+        {
+            Value = value;
+            NChar = value.Length;
+        }
+    }
     public class Mots
     {
         //Constante
         //Varaible global
-        string sValeurtxt3 = AnalyseurTexte.TxtOtexte.Text;
-        int iNombre = 0;
-        int iNcaractere = 0;
-        string motpluslong = "";
-        int iNvoyelles = 0;
-        int iNconsonnes = 0;
 
-
-        public static List<string> list { get; set; }
-        public List<string> listmots { get; set; }
-
-        string[] words = new string[1000];
-
-        public string mots { get; set; }
+        
+        public List<Mot> listmots { get; set; } = new List<Mot>();
+        
         public Mots ()
         {
-            string sValeurtxt1 = "";
-            string sValeurtxt2 = "";
             Regex regex = new Regex(@"(\s+)");
-            sValeurtxt1 = regex.Replace(AnalyseurTexte.TxtOtexte.Text," "); 
-            sValeurtxt2 = sValeurtxt1;
-            words = sValeurtxt2.Split(' ',':','\\','/','\'','\r','\t');           
-            list = words.ToList();
-            AnalyseurTexte.TxtNtexte.Text = sValeurtxt2;
-
-            foreach (string Motstrim in list)
+            string sValeurtxt = regex.Replace(AnalyseurTexte.TxtOtexte.Text," ");
+            AnalyseurTexte.TxtNtexte.Text = sValeurtxt;
+            string[] words = new string[1000];
+            words = sValeurtxt.Split(' ',':','\\','/','\'','\r','\t');
+            foreach (string Motstrim in words)
             {
-                string tata = Motstrim.Trim(new Char[] {'.',' ',',','/',':','"'}).ToLower();
-                MessageBox.Show(tata);
-                listmots.Add(tata);
-                Form1.DataGridView1.DataSource = listmots.ToList();
+                string myStr = Motstrim.Trim(new Char[] {'.',' ',',','/',':','"'}).ToLower();
+                Mot myMot = new Mot(myStr);
+                listmots.Add(myMot);
             }
-           
+            
+            new Form1(listmots).Show();
+
         }
-        public void Nmots ()
+        public void Nmots()
         {
-            iNombre = words.Length;
-            AnalyseurTexte.TxtNmots.Text = iNombre.ToString();
+            AnalyseurTexte.TxtNmots.Text = listmots.Count.ToString();
 
         }
         public void Ncaractere ()
         {
-            iNcaractere = sValeurtxt3.Length;
-            AnalyseurTexte.TxtNcaracteres.Text = iNcaractere.ToString();
+            int totalChar = 0;
+            foreach(Mot m in listmots) totalChar += m.NChar;
+            AnalyseurTexte.TxtNcaracteres.Text = totalChar.ToString();
         }
         public void NvoyellesNconsonnes()
         {
+            int iNvoyelles = 0;
+            int iNconsonnes = 0;
             Char[] Voyelle = new Char[] { 'a', 'e', 'i', 'o', 'u','à','â','é','è','ê','ë','ï','î','ù','û','ô','y' };
-            foreach (string word in listmots )
+            foreach (Mot word in listmots )
             {
-                foreach(char c in word)
+                foreach(char c in word.Value)
                 {
                     if (Char.IsLetter(c))
                     {
@@ -88,13 +88,14 @@ namespace TP3
         {
             int iNlettre = 0;
             int iPluslettre = 0;
-            foreach (string mots in listmots)
+            string motpluslong = "";
+            foreach (Mot mots in listmots)
             {
-                iNlettre = mots.Length;
+                iNlettre = mots.Value.Length;
                 if (iNlettre > iPluslettre)
                 {
                     iPluslettre = iNlettre;
-                    motpluslong = mots;
+                    motpluslong = mots.Value;
                 }              
             }
             AnalyseurTexte.TxtMotpluslong.Text = motpluslong;
@@ -109,21 +110,15 @@ namespace TP3
             AnalyseurTexte.TxtNvoyelles.Text = "";
             AnalyseurTexte.TxtNconsonnes.Text = "";
             AnalyseurTexte.TxtMotpluslong.Text = "";
-            int iNombre = 0;
-            int iNcaractere = 0;
-            string motpluslong = "";
-            int iNvoyelles = 0;
-            int iNconsonnes = 0;
             string[] words = new string[1000];
             listmots.Clear();
-            list.Clear();
 
         }
         public void ListMots()
         {
-            foreach (string g in listmots)
+            foreach (Mot g in listmots)
             {
-                MessageBox.Show(g);
+                MessageBox.Show(g.Value);
             }
 
         }
