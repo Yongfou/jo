@@ -7,36 +7,32 @@ using System.Windows.Forms;
 
 namespace Compagnie
 {
-    class Product
+    public class Product
     {
         public int Idproduct { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         public string Name { get; set; }
         public string Color { get; set; }
-        //public List<string> Listcolor { get; set; } = new List<string>();
-       // public List<string> ListProducts { get; set; } = new List<string>();      
-        public Product(int idproduct, string name, double price, string color)        
+        public int Quantité { get; set; }
+        public Product()
         {
-            Idproduct = idproduct;
-            Name = name;
-            Price = price;
-            Color = color;
-           // Listcolor.Add("Blue");
-           // Listcolor.Add ("Black");
-          //  Listcolor.Add("White");
+            this.Name = Addproduct.TxtNom.Text;
+            this.Idproduct = Convert.ToInt32(Addproduct.TxtIdproduct.Text);
+            this.Price = Convert.ToDecimal(Addproduct.TxtPrice.Text);
+            this.Color = Addproduct.CmbColor.Text;
+            this.Quantité = Convert.ToInt32(Addproduct.TxtN.Text);
+            GlobalVar.products.Add(this);
+            Addproduct.TxtNom.Text = "";
+            Addproduct.TxtIdproduct.Text = "";
+            Addproduct.TxtPrice.Text = "";
+            Addproduct.CmbColor.Text = "";
+            Addproduct.TxtN.Text = "";
+            Addproduct.MyGrid.DataSource = GlobalVar.products.ToList();
         }
-        public void AddColor (string color)
+        
+        public override string ToString()
         {
-           // Listcolor.Add(color);
-        }
-        public void AddProduct() //(string name)
-        {
-           // ListProducts.Add(Name);
-            
-        }
-        public void ViewProduct()
-        {
-            MessageBox.Show(Idproduct + "\n" + Name + "\n" + Price.ToString("0.00")+ "$" + "\n" + Color);
+            return Idproduct + "\n" + Name + "\n" + Price.ToString("0.00") + "$" + "\n" + Color + "\n" + Quantité;
         }
     }
 }

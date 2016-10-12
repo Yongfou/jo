@@ -46,6 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addperso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addperso.Designer.cs">
+      <DependentUpon>Addperso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quantité.cs" />
+    <Compile Include="DeleteOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOrder.Designer.cs">
+      <DependentUpon>DeleteOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProduct.Designer.cs">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrder.Designer.cs">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,16 +89,137 @@
     <Compile Include="Addproduct.Designer.cs">
       <DependentUpon>Addproduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Allproducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allproducts.Designer.cs">
+      <DependentUpon>Allproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePerson.Designer.cs">
+      <DependentUpon>DeletePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPerson.Designer.cs">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrder.Designer.cs">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListAllOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAllOrders.Designer.cs">
+      <DependentUpon>ListAllOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListAllPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAllPersons.Designer.cs">
+      <DependentUpon>ListAllPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOrder.Designer.cs">
+      <DependentUpon>MenuOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPerson.Designer.cs">
+      <DependentUpon>MenuPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPerson.Designer.cs">
+      <DependentUpon>ViewPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduct.Designer.cs">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProduct.Designer.cs">
+      <DependentUpon>MenuProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addperso.resx">
+      <DependentUpon>Addperso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Addproduct.resx">
       <DependentUpon>Addproduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Allproducts.resx">
+      <DependentUpon>Allproducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOrder.resx">
+      <DependentUpon>DeleteOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePerson.resx">
+      <DependentUpon>DeletePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProduct.resx">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPerson.resx">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrder.resx">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListAllOrders.resx">
+      <DependentUpon>ListAllOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListAllPersons.resx">
+      <DependentUpon>ListAllPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOrder.resx">
+      <DependentUpon>MenuOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPerson.resx">
+      <DependentUpon>MenuPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPerson.resx">
+      <DependentUpon>ViewPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduct.resx">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProduct.resx">
+      <DependentUpon>MenuProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +230,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Order.datasource" />
+    <None Include="Properties\DataSources\Person.datasource" />
+    <None Include="Properties\DataSources\Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
