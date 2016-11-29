@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiChatProgramme", "MultiChatProgramme\MultiChatProgramme.csproj", "{E469172F-AD5C-46D6-9412-51BD166BEF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serveur", "Serveur\Serveur.csproj", "{6CD18758-F340-46A1-93BB-764E67D7EF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServeurData", "ServeurData\ServeurData.csproj", "{F2E1BAB4-AC9B-41C4-99C3-471E96C1172F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E469172F-AD5C-46D6-9412-51BD166BEF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E469172F-AD5C-46D6-9412-51BD166BEF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E469172F-AD5C-46D6-9412-51BD166BEF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E469172F-AD5C-46D6-9412-51BD166BEF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD18758-F340-46A1-93BB-764E67D7EF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD18758-F340-46A1-93BB-764E67D7EF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD18758-F340-46A1-93BB-764E67D7EF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD18758-F340-46A1-93BB-764E67D7EF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E1BAB4-AC9B-41C4-99C3-471E96C1172F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E1BAB4-AC9B-41C4-99C3-471E96C1172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E1BAB4-AC9B-41C4-99C3-471E96C1172F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E1BAB4-AC9B-41C4-99C3-471E96C1172F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

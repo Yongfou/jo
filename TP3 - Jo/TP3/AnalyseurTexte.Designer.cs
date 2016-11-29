@@ -444,6 +444,7 @@
             this.Name = "AnalyseurTexte";
             this.ShowIcon = false;
             this.Text = "Analyseur de texte";
+            this.Load += new System.EventHandler(this.AnalyseurTexte_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
