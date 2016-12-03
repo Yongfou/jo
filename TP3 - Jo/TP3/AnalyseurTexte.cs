@@ -58,5 +58,10 @@ namespace TP3
             txtMotpluslong.Text = "";
             */
         }
+
+        private void AnalyseurTexte_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
